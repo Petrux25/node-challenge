@@ -1,0 +1,24 @@
+{
+  "name": "node-challenge",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "csvtojson": "^2.0.10",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.2.1",
+    "mongodb": "^3.6.4",
+    "morgan": "~1.9.1",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.34",
+    "mongodb-memory-server": "^6.9.6",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1"
+  }
+}
