@@ -3,7 +3,7 @@ import * as csv from 'csvtojson';
 import Car from '../models/Car'
 import MongoDB from "../db/MongoDB"
 
-export const saveCVS = async (req) => {
+export const postCSV = async (req) => {
   try {
     const providerName = req.body?.providerName
     const { uri } = await MongoDB();
@@ -23,6 +23,8 @@ export const saveCVS = async (req) => {
     await carsCollection.find({}).forEach((m) => {
       console.log(m);
     });
+
+    return {providerName, cars}
     
   } catch (error) {
     console.log(error)
